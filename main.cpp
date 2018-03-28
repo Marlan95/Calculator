@@ -10,9 +10,9 @@ int main(int argc, char *argv[])
     w.show();
     */
 
-    //CalculatorMView m_view = new CalculatorMView();
-    CalculatorMView m_view;
-    CalculatorLogic m_calculator = new CalculatorLogic(&m_view);
+    CalculatorMView *m_view = new CalculatorMView();
+    //CalculatorMView m_view;
+    CalculatorLogic *m_calculator = new CalculatorLogic(m_view);
 
     return a.exec();
 }
